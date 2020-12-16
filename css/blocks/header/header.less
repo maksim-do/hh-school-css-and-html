@@ -1,0 +1,35 @@
+.header {
+  background-color: #212122;
+  color: #fff;
+  
+  &__content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__fill {
+    flex-grow: 1;
+  }
+
+  &__button {
+    margin-left: 20px;
+  }
+}
+
+.header-button-icon {
+  height: 30px;
+  width: 30px;
+  background: no-repeat 50% 50%;
+  color: #fff;
+  text-indent: -9999px;
+  border: 0;
+
+  @icons: search, login, menu;
+
+  each(@icons, {
+    &_@{value} {
+      background-image: url('@{value}.svg');
+    }
+  })
+}
