@@ -4,7 +4,7 @@
     padding: 0 15px;
 
     @media @screen-gt-s {
-        width: @column-width-m * 6;
+        width: @column-width-m * 6 + @column-padding-m*2;
         margin: 0 auto;
     }
 
@@ -51,6 +51,14 @@ each(range(2), {
     each(range(12), {
         .column_l-@{value} {
             width: @column-width-l * @value;
+        }
+    })
+}
+
+@media @screen-only-s {
+    each(range(3), {
+        .order_s-@{value} {
+            order: @value;
         }
     })
 }
