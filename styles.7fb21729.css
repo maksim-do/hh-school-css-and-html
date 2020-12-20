@@ -176,10 +176,31 @@ body {
     width: 960px;
   }
 }
+@media (max-width: 767px) {
+  .order_s-1 {
+    order: 1;
+  }
+  .order_s-2 {
+    order: 2;
+  }
+  .order_s-3 {
+    order: 3;
+  }
+}
 .heading {
   font-size: 26px;
   font-family: ProximaNovaCond, Arial, sans-serif;
   margin: 0 0 20px;
+}
+.heading_level-1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .heading_level-1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 }
 .heading_level-2 {
   font-size: 20px;
@@ -188,6 +209,9 @@ body {
   .heading_level-2 {
     font-size: 30px;
   }
+}
+.text-block {
+  display: block;
 }
 .header {
   background-color: #212122;
@@ -278,6 +302,7 @@ body {
   text-align: center;
 }
 .product-card__image-container {
+  display: inline-block;
   margin-bottom: 10px;
   position: relative;
 }
@@ -341,6 +366,199 @@ body {
 .menu__link {
   color: #fff;
   text-decoration: none;
+}
+.section-slider {
+  padding: 30px 0;
+  background: #F9F9F9;
+}
+@media (min-width: 768px) {
+  .section-slider {
+    padding-top: 60px;
+  }
+}
+.slider {
+  text-align: center;
+  order: 1;
+}
+.slider__image-container {
+  display: inline-block;
+}
+.slider__image {
+  max-width: 100%;
+}
+.slider-sidebar {
+  order: 2;
+  text-align: center;
+}
+.slider-sidebar__button {
+  background: #0F8FEE;
+  border: 0;
+  border-radius: 1px;
+  width: 150px;
+  height: 38px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .slider-sidebar {
+    text-align: left;
+    padding-top: 15px;
+  }
+}
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+.slider-nav__item {
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin: 0 5px;
+  background: #DFDEDD;
+  border-radius: 50%;
+}
+.slider-nav__item_current {
+  background: #212122;
+}
+.additional {
+  background: #EEEEEE;
+  padding: 30px 0;
+}
+.additional-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.additional-item__icon {
+  margin-right: 20px;
+}
+@media (min-width: 768px) and (max-width: 999px) {
+  .additional-item__icon {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 1000px) {
+  .additional-item__icon {
+    margin-right: 30px;
+  }
+}
+.additional-item__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+.additional-item__img {
+  max-width: 40px;
+}
+@media (min-width: 768px) {
+  .additional-item {
+    margin: 0;
+  }
+}
+.additional-item__icon_delivery {
+  background-image: url('delivery.ce601f7e.svg');
+}
+.additional-item__icon_return {
+  background-image: url('return.2bf37b51.svg');
+}
+.additional-item__icon_support {
+  background-image: url('support.b076621e.svg');
+}
+.footer {
+  background: #212122;
+  padding-top: 30px;
+}
+.footer-links-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .footer-links-conteiner {
+    justify-content: space-between;
+  }
+}
+.footer-social {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+.footer-social__icon {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-right: 15px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background: no-repeat 50% 50%;
+}
+@media (min-width: 768px) {
+  .footer-social {
+    width: 204px;
+    margin-bottom: 0;
+  }
+}
+.footer-social__icon_facebook {
+  background-image: url('facebook.d1f75d66.svg');
+}
+.footer-social__icon_twitter {
+  background-image: url('twitter.eef68724.svg');
+}
+.footer-social__icon_vk {
+  background-image: url('vk.7434af77.svg');
+}
+.footer-social__icon_instagram {
+  background-image: url('instagram.42a9b087.svg');
+}
+.footer-apps {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer-apps__icon {
+  display: block;
+  width: 140px;
+  height: 40px;
+  text-indent: -9999px;
+  background: no-repeat 50% 50%;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .footer-apps {
+    width: 288px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+.footer-apps__icon_apple {
+  background-image: url('apple.8a1b47ed.svg');
+}
+.footer-apps__icon_google {
+  background-image: url('google.8527c60e.svg');
+}
+.footer-logo {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .footer-logo {
+    display: block;
+  }
+}
+.footer-copyright {
+  border-top: 1px solid #666666;
+  display: flex;
+  height: 132px;
+}
+.footer-copyright__text-wrapper {
+  margin: auto 0;
+  color: #999999;
+}
+@media (min-width: 1000px) {
+  .footer-copyright {
+    height: 110px;
+  }
 }
 
 
