@@ -427,6 +427,11 @@ body {
   background: #EEEEEE;
   padding: 30px 0;
 }
+@media (min-width: 1000px) {
+  .additional {
+    padding: 45px 0;
+  }
+}
 .additional-item {
   display: flex;
   margin-bottom: 30px;
