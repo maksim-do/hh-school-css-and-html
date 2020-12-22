@@ -1,0 +1,53 @@
+.section-slider {
+  padding: 30px 0;
+  background: #F9F9F9;
+  
+  @media @screen-gt-s {
+    padding-top: 60px;
+  }
+}
+
+.slider {
+  text-align: center;
+  order: 1;
+
+  &__image-container {
+    display: inline-block;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+}
+
+
+.slider-sidebar {
+  order: 2;
+  text-align: center;
+  
+  @media @screen-gt-s {
+    text-align: left;
+    padding-top: 15px;
+  }
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+
+  &__item {
+  width: 8px;
+  height: 8px;
+  display: block;
+  margin: 0 4px;
+  background:#DFDEDD;
+  border-radius: 50%;
+
+  &_current {
+    background: #212122;
+  }
+  
+  }
+}
+

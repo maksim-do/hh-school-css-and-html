@@ -1,8 +1,8 @@
 {
     "name": "html-and-css-homework",
     "version": "1.0.0",
-    "homepage": "http://leonidfeskov.github.io/html-and-css-homework/",
-    "author": "Leonid Feskov",
+    "homepage": "https://maksim-do.github.io/hh-school-css-and-html/",
+    "author": "Leonid Feskov & Maksim Dolzhenkov",
     "license": "MIT",
     "scripts": {
         "dev": "parcel index.html",
