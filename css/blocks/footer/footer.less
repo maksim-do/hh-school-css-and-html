@@ -30,9 +30,15 @@
   }
 
   @media @screen-gt-s {
-    width: 204px;
+    width:  @column-width-m * 2 - @column-padding-m;
+    margin-bottom: 0;    
+  }
+
+  @media @screen-gt-m {
+    width:  @column-width-l * 3 - @column-padding-l*2;
     margin-bottom: 0;
   }
+
 }
 
 @imgs: facebook, twitter, vk, instagram;
@@ -45,7 +51,7 @@ each(@imgs, {
 
 .footer-apps {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 
   &__icon {
@@ -56,11 +62,20 @@ each(@imgs, {
     background: no-repeat 50% 50%;
     border: none;
     cursor: pointer;
+
+    &:nth-child(1) {
+      margin-right: 8px;
+    }
   }
 
-  @media @screen-gt-s {
-    width: 288px;
-    justify-content: space-between;
+  @media @screen-only-m {
+    width: @column-width-m * 3 - @column-padding-l;
+    margin-bottom: 0;
+    justify-content: flex-end;
+  }
+
+  @media @screen-gt-m {
+    width: @column-width-l * 4 - @column-padding-l;
     margin-bottom: 0;
   }
 }
@@ -84,7 +99,7 @@ each(@apps, {
 .footer-copyright {
   border-top: 1px solid #666666;
   display: flex;
-  padding: 35px;
+  padding: 35px 0;
 
   &__text-wrapper {
     margin: auto 0;
