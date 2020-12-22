@@ -20,17 +20,27 @@
     }
 
     @media @screen-only-l {
-      margin-right: 30px;
+      margin-right: @column-padding-l*2;
     }
   }
 
   &__text-wrapper {
     display: flex;
     align-items: center;
+
+
+    @media @screen-only-l {
+      width: @column-width-l*2;
+    }
   }
 
   &__img {
-    max-width: 40px;
+    width: 40px;
+
+    @media @screen-only-l {
+      width: @column-width-l - @column-padding-l*2;
+    }
+
   }
 
     @media @screen-gt-s {
